@@ -1,0 +1,126 @@
+/*Some necessary adjustments*/
+h1,
+body,
+html,
+main {
+    margin: 0;
+}
+/*Import the font and set the default size*/
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 78px;
+    font-weight: lighter;
+}
+
+.description {
+    font-size: 33px;
+    font-weight: normal;
+}
+
+.recipe-info-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-info {
+    max-width: 100%;
+    height: auto;
+}
+
+.separador {
+    border-color: black;
+    border: 1.5px solid black;
+    width: 90%;
+    position: relative;
+    left: 85px;
+}
+
+.lista-ingredientes {
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.lista-ingredientes h1 {
+    font-size: 33px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.lista-ingredientes li {
+    margin-left: 17px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.lista-ingredientes li::before {
+    content: '- ';
+}
+
+li:last-child {
+    margin-bottom: 30px;
+}
+
+li {
+    font-weight: normal;
+}
+
+.img-cooking-info {
+    max-width: 100%;
+    height: auto;
+}
+
+.cooking-info-container {
+    position: relative;
+    text-align: center;
+}
+
+.cooking-info-container ol,
+li {
+    position: relative;
+    text-align: left;
+}
+
+.lista-instrucciones {
+    list-style-type: none;
+    counter-reset: item;
+    margin-left: 50px;
+}
+
+.lista-instrucciones li {
+    margin-left: 17px;
+    font-size: 27.3px;
+    counter-increment: item;
+    max-width: 1100px;
+}
+
+.lista-instrucciones li::before {
+    content: counter(item) ') ';
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.lista-instrucciones h1 {
+    font-size: 33px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
